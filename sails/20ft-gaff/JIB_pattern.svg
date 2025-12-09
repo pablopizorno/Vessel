@@ -1,0 +1,24 @@
+<!-- Simplified starter SVG for jib (scale in feet). Use as starting point for cut pattern editing. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="800" viewBox="0 0 60 80">
+  <style>
+    .panel { fill:none; stroke:#000; stroke-width:0.2 }
+    .text { font-size:1.6px; font-family:Arial }
+  </style>
+
+  <g transform="translate(5,75) scale(1,-1)">
+    <!-- Triangular jib -->
+    <path class="panel" d="M0,0 L7.5,0 L0,22 Z" />
+    <!-- Panels: 3 vertical simple panels -->
+    <line class="panel" x1="2.5" y1="0" x2="2.5" y2="16" />
+    <line class="panel" x1="5.0" y1="0" x2="5.0" y2="12" />
+    <text class="text" x="0.2" y="1.8">J = 7.5 ft</text>
+    <text class="text" x="0.2" y="23">I ≈ 22.0 ft</text>
+    <text class="text" x="2.6" y="10">Panels: 3 (vertical)</text>
+    <circle cx="0" cy="0" r="0.25" fill="#000" />
+    <text class="text" x="0.6" y="0.6">Tack</text>
+    <circle cx="7.5" cy="0" r="0.25" fill="#000" />
+    <text class="text" x="7.8" y="0.6">Clew</text>
+    <circle cx="0" cy="22" r="0.25" fill="#000" />
+    <text class="text" x="0.6" y="22.6">Head</text>
+  </g>
+</svg>

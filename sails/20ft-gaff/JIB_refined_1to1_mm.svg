@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 1:1 refined jib SVG in millimetres. Units: mm. I = 6708 mm (approx 22 ft), J = 2286 mm (7.5 ft).
+     Origin (0,0) = tack; head at (0,6705.6). -->
+<svg xmlns="http://www.w3.org/2000/svg" width="2600mm" height="7200mm" viewBox="-200 -200 2600 7200">
+  <defs>
+    <style>
+      .outline { fill:none; stroke:#000; stroke-width:5 }
+      .label { font-size:36px; font-family:Arial, Helvetica, sans-serif; fill:#000 }
+      .point { fill:#000 }
+    </style>
+  </defs>
+
+  <!-- Triangle jib (smoothed leech) -->
+  <path class="outline" d=""
+    M 0 0
+    L 2286 0
+    C 1800 600, 1100 2200, 0 6705.6
+    L 0 0
+    Z
+  " />
+
+  <circle class="point" cx="0" cy="0" r="10" />
+  <text class="label" x="30" y="40">Tack</text>
+  <circle class="point" cx="2286" cy="0" r="10" />
+  <text class="label" x="2300" y="40">Clew (J = 2286 mm)</text>
+  <circle class="point" cx="0" cy="6705.6" r="10" />
+  <text class="label" x="30" y="6745.6">Head (I ≈ 6705.6 mm)</text>
+
+  <text class="label" x="20" y="7000">Scale: 1:1 (units = mm). Panels: split vertically into 3 panels per BOM.</text>
+</svg>

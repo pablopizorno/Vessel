@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 1:1 refined mainsail SVG in millimetres. Units: mm. Luff (P)=5334 mm, Boom (E)=3657.6 mm approx.
+     Points are approximations from the plan; treat as pattern-master and verify against actual mast/boom positions before cutting. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="6200mm" height="6400mm" viewBox="-200 -200 6200 6400">
+  <defs>
+    <style>
+      .outline { fill:none; stroke:#000; stroke-width:6 }
+      .guide { fill:none; stroke:#f00; stroke-width:1; stroke-dasharray:10 6 }
+      .label { font-size:40px; font-family:Arial, Helvetica, sans-serif; fill:#000 }
+      .point { fill:#000 }
+    </style>
+  </defs>
+
+  <!-- Coordinate system: origin (0,0) = tack (mm). Positive X aft, positive Y up (mm). -->
+  <!-- Mast luff at x=0 from y=0 to y=6096 -->
+  <line x1="0" y1="0" x2="0" y2="6096" stroke="#333" stroke-width="4" />
+
+  <!-- Refined leech & head as a smooth path using Bezier curves -->
+  <path class="outline" d=""
+    M 0 0
+    L 3657.6 0
+    C 3860 600, 4100 2600, 4114.8 3048
+    C 4100 3400, 3600 3700, 2895.6 3810
+    C 2400 3900, 1800 4700, 2200 4950
+    C 2700 5200, 4200 5400, 5334 5486.4
+    L 5334 5486.4
+    L 2895.6 3810
+    L 0 6096
+    Z
+  " />
+
+  <!-- Panel guide lines (horizontal cross-cut panel locations, mm) -->
+  <line class="guide" x1="-100" y1="991.0" x2="5600" y2="991.0" />
+  <line class="guide" x1="-100" y1="1866.0" x2="5600" y2="1866.0" />
+  <line class="guide" x1="-100" y1="2694.0" x2="5600" y2="2694.0" />
+  <line class="guide" x1="-100" y1="3312.0" x2="5600" y2="3312.0" />
+  <line class="guide" x1="-100" y1="4095.0" x2="5600" y2="4095.0" />
+
+  <!-- Labels -->
+  <text class="label" x="20" y="60">Tack (0,0)</text>
+  <circle class="point" cx="0" cy="0" r="12" />
+  <text class="label" x="3668" y="60">Clew (E = 3657.6 mm)</text>
+  <circle class="point" cx="3657.6" cy="0" r="12" />
+  <text class="label" x="5320" y="5540">Peak (G head)</text>
+  <circle class="point" cx="5334" cy="5486.4" r="12" />
+
+  <!-- Reef marks (approx positions on luff measured up from boom) -->
+  <line x1="-50" y1="2100" x2="0" y2="2100" stroke="#000" stroke-width="6" />
+  <text class="label" x="-180" y="2140">Reef 2 ≈ 2100 mm</text>
+  <line x1="-50" y1="1070" x2="0" y2="1070" stroke="#000" stroke-width="6" />
+  <text class="label" x="-180" y="1110">Reef 1 ≈ 1070 mm</text>
+
+  <!-- Notes -->
+  <text class="label" x="20" y="6200">Scale: 1:1 (units = mm). Verify mast/boom positions prior to cutting.</text>
+</svg>
